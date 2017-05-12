@@ -9,9 +9,8 @@
  	public $bind = array();
  	public $objectList = array();
  	public $param = array();
- 	
-
- 	
+ 
+ 
  	/**
  	 * 设置要使用的对象
  	 */
