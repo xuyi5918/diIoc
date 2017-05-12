@@ -154,7 +154,8 @@
  	/**
  	 * 获取默认值
  	 */
- 	private function defaultValue($defaultValue, $total) {
+ 	private function defaultValue($defaultValue, $total) 
+ 	{
 
  		if($defaultValue->isDefaultValueAvailable()){
 
@@ -183,7 +184,6 @@
  		if(! empty($param) && isset($this->objectList[$param])){
  			return TRUE;
  		}
-
  		return FALSE;
  	}
 
