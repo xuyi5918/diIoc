@@ -183,7 +183,6 @@
  		if(! empty($param) && isset($this->objectList[$param])){
  			return TRUE;
  		}
-
  		return FALSE;
  	}
 
