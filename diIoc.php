@@ -6,11 +6,11 @@
   * @date 2017/5/8
   */ 
  class di {
- 	public $bind = array();
- 	public $objectList = array();
- 	public $param = array();
+ 	private $bind = array();
+ 	private $objectList = array();
+ 	private $param = array();
  
- 
+
  	/**
  	 * 设置要使用的对象
  	 */
@@ -173,6 +173,18 @@
  			unset($this->objectList[$bind], $this->bind[$bind]);
  		}
  		return TRUE;
+ 	}
+
+ 	/**
+ 	 * 检测容器这种是否存在要使用的对象
+ 	 */
+ 	public function check($param)
+ 	{
+ 		if(! empty($param) && isset($this->objectList[$param])){
+ 			return TRUE;
+ 		}
+
+ 		return FALSE;
  	}
 
  }
