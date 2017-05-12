@@ -76,9 +76,7 @@
  			}else{
  				$obj = $newClass->newInstanceArgs($resultParam);
  			}
-
-
-
+ 			
  			/**注册方式 是否共享**/
 
  			if($this->bind[$bind]['share']) {
@@ -186,6 +184,5 @@
  		}
  		return FALSE;
  	}
-
  }
 ?>
